@@ -46,7 +46,9 @@ public class MyAspect {
 	/*
 	@Around("execution(* findProduct(String))")
 	public ProductVo around(ProceedingJoinPoint joinPoint) throws Throwable {
-		//	메서드 가로채기, 매개변수 바꾸기 등 부가작업 수행
+		//	메서드 가로채기, 매개변수 바꾸기, 
+		//	메서드 실행 전후에 추가로직 삽입 등 부가작업 수행
+
 		System.out.println("call [around advice]: before");
 		//	매개변수 바꾸기 
 		Object[] args = {"iPhone"};
